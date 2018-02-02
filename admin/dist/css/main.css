@@ -1,0 +1,4 @@
+.main-sidebar{ position: fixed; bottom: 0; overflow: auto; }
+.logo-position{ position: fixed; }
+.skin-blue .main-header .navbar{ position: fixed; left:0; top: 0; right: 0;}
+.right-main{ margin-top: 50px; }
