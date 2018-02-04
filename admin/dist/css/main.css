@@ -1,6 +1,6 @@
 .main-sidebar{ position: fixed; bottom: 0; overflow: auto; }
 .logo-position{ position: fixed; }
-.skin-blue .main-header .navbar{ position: fixed; left:0; top: 0; right: 0;}
+.main-header .navbar{ position: fixed; left:0; top: 0; right: 0;}
 .right-main{ margin-top: 0; }
 .layui-tab-title{ }
 .kit-tab .kit-tab-tool{border: none; height: 50px; line-height: 50px; color: #FFF; position: fixed; right: 360px; top:0; z-index: 9999;}
