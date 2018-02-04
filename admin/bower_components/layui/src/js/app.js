@@ -214,6 +214,7 @@ layui.define(['element', 'nprogress', 'form', 'table', 'loader', 'tab', 'navbar'
                 ripple.style.top = top + 'px'
                 ripple.style.left = left + 'px'
                 ripple.classList.add('show');
+
                 return false;
             }
             document.addEventListener('click', addRippleEffect, false);

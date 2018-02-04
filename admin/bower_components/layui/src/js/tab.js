@@ -87,24 +87,9 @@ layui.define(['jquery', 'element', 'nprogress', 'utils'], function(exports) {
             if (that.tabDomExists())
                 return;
             //模板
-            var tpl2=['<div class="tab-bar"><ul class="layui-tab-title">',
-                    '<li class="layui-this" lay-id="-1" data-url="' + _config.mainUrl + '"><i class="layui-icon">&#xe68e;</i> 控制面板</li>',
-                    '</ul>',
-                    '<div class="kit-tab-tool">操作&nbsp;<i class="fa fa-caret-down"></i></div>',
-                    '<div class="kit-tab-tool-body layui-anim layui-anim-upbit">',
-                    '<ul>',
-                    '<li class="kit-item" data-target="refresh">刷新当前选项卡</li>',
-                    '<li class="kit-line"></li>',
-                    '<li class="kit-item" data-target="closeCurrent">关闭当前选项卡</li>',
-                    '<li class="kit-item" data-target="closeOther">关闭其他选项卡</li>',
-                    '<li class="kit-line"></li>',
-                    '<li class="kit-item" data-target="closeAll">关闭所有选项卡</li>',
-                    '</ul>',
-                    '</div></div>',],
-            _htm2 = tpl2.join('');
             var tpl = [
                     '<div class="layui-tab layui-tab-card kit-tab" lay-filter="' + that._filter + '">',
-                    '<div class="tab-bar"><ul class="layui-tab-title">',
+                    '<ul class="layui-tab-title">',
                     '<li class="layui-this" lay-id="-1" data-url="' + _config.mainUrl + '"><i class="layui-icon">&#xe68e;</i> 控制面板</li>',
                     '</ul>',
                     '<div class="kit-tab-tool">操作&nbsp;<i class="fa fa-caret-down"></i></div>',
@@ -117,7 +102,7 @@ layui.define(['jquery', 'element', 'nprogress', 'utils'], function(exports) {
                     '<li class="kit-line"></li>',
                     '<li class="kit-item" data-target="closeAll">关闭所有选项卡</li>',
                     '</ul>',
-                    '</div></div>',
+                    '</div>',
                     '<div class="layui-tab-content">',
                     '<div class="layui-tab-item layui-show" lay-item-id="-1">{{content}}</div>',
                     '</div>',
@@ -133,7 +118,6 @@ layui.define(['jquery', 'element', 'nprogress', 'utils'], function(exports) {
                     break;
             }
             //渲染
-            $(".nav-tab").html(_htm2);
             $(_config.elem).html(_htm);
             that._title = $('.kit-tab ul.layui-tab-title');
             that._content = $('.kit-tab div.layui-tab-content');

@@ -1,4 +1,19 @@
 .main-sidebar{ position: fixed; bottom: 0; overflow: auto; }
 .logo-position{ position: fixed; }
 .skin-blue .main-header .navbar{ position: fixed; left:0; top: 0; right: 0;}
-.right-main{ margin-top: 50px; }
+.right-main{ margin-top: 0; }
+.layui-tab-title{ }
+.kit-tab .kit-tab-tool{border: none; height: 50px; line-height: 50px; color: #FFF; position: fixed; right: 360px; top:0; z-index: 9999;}
+.kit-tab .kit-tab-tool-body{ position: fixed; right: 360px; top: 50px; }
+.kit-tab .layui-tab-title {border: none; width: calc(100% - 693px); height: 50px; margin-bottom: 0; position: fixed; left: 273px; top: 0; z-index: 9999;}
+.sidebar-collapse .kit-tab .layui-tab-title{ left: 93px; width: calc(100% - 516px);}
+.layui-tab-card>.layui-tab-title{ background: none;}
+.kit-tab .kit-tab-tool:hover {
+    background-color: rgba(0,0,0,.1);
+}
+.layui-tab-card>.layui-tab-title .layui-this {
+    background-color: rgba(0,0,0,.1); border:none; color: #FFF;
+}
+.layui-tab-title li{ color: #FFF; padding: 0 10px; line-height: 50px;}
+.layui-tab-title li .layui-tab-close{ color: #FFF;}
+.layui-tab-title .layui-this:after{ display: none;}
