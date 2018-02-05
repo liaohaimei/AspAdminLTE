@@ -341,6 +341,395 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
+          
+          <li class="">
+    <a href="/admin/dashboard?ref=addtabs" addtabs="1" url="/admin/dashboard" py="kzt" pinyin="kongzhitai"> <i class="fa fa-dashboard
+    "></i>
+      <span>控制台</span>
+      <span class="pull-right-container">
+        <small class="label pull-right bg-blue">hot</small>
+      </span>
+    </a>
+  </li>
+  <li class="treeview">
+    <a href="javascript:;" addtabs="2" url="javascript:;" py="cggl" pinyin="changguiguanli"> <i class="fa fa-cogs"></i>
+      <span>常规管理</span>
+      <span class="pull-right-container">
+        <small class="label pull-right bg-purple">new</small>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+      <li class="">
+        <a href="/admin/general/crontab?ref=addtabs" addtabs="270" url="/admin/general/crontab" py="dsrw" pinyin="dingshirenwu">
+          <i class="fa fa-tasks"></i>
+          <span>定时任务</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/general/database?ref=addtabs" addtabs="276" url="/admin/general/database" py="sjkgl" pinyin="shujukuguanli">
+          <i class="fa fa-database"></i>
+          <span>数据库管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/general/profile?ref=addtabs" addtabs="8" url="/admin/general/profile" py="grpz" pinyin="gerenpeizhi">
+          <i class="fa fa-user
+    "></i>
+          <span>个人配置</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/general/attachment?ref=addtabs" addtabs="7" url="/admin/general/attachment" py="fjgl" pinyin="fujianguanli">
+          <i class="fa fa-file-image-o"></i>
+          <span>附件管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/general/config?ref=addtabs" addtabs="6" url="/admin/general/config" py="xtpz" pinyin="xitongpeizhi">
+          <i class="fa fa-cog"></i>
+          <span>系统配置</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="">
+    <a href="/admin/addon?ref=addtabs" addtabs="4" url="/admin/addon" py="cjgl" pinyin="chajianguanli">
+      <i class="fa fa-rocket"></i>
+      <span>插件管理</span>
+      <span class="pull-right-container">
+        <small class="badge pull-right bg-red">new</small>
+      </span>
+    </a>
+  </li>
+  <li class="">
+    <a href="/admin/docs?ref=addtabs" addtabs="230" url="/admin/docs" py="wdgl" pinyin="wendangguanli">
+      <i class="fa fa-file"></i>
+      <span>文档管理</span>
+      <span class="pull-right-container"></span>
+    </a>
+  </li>
+  <li class="">
+    <a href="/admin/calendar?ref=addtabs" addtabs="336" url="/admin/calendar" py="rlgl" pinyin="riliguanli">
+      <i class="fa fa-calendar"></i>
+      <span>日历管理</span>
+      <span class="pull-right-container"></span>
+    </a>
+  </li>
+  <li class="treeview active">
+    <a href="javascript:;" addtabs="5" url="javascript:;" py="qxgl" pinyin="quanxianguanli">
+      <i class="fa fa-group"></i>
+      <span>权限管理</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu menu-open" style="display: block;">
+      <li class="">
+        <a href="/admin/auth/rule?ref=addtabs" addtabs="12" url="/admin/auth/rule" py="gzgl" pinyin="guizeguanli">
+          <i class="fa fa-bars"></i>
+          <span>规则管理</span>
+          <span class="pull-right-container">
+            <small class="label pull-right bg-teal">side</small>
+          </span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/auth/group?ref=addtabs" addtabs="11" url="/admin/auth/group" py="jsz" pinyin="juesezu">
+          <i class="fa fa-group"></i>
+          <span>角色组</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/auth/adminlog?ref=addtabs" addtabs="10" url="/admin/auth/adminlog" py="glyrz" pinyin="guanliyuanrizhi">
+          <i class="fa fa-list-alt"></i>
+          <span>管理员日志</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="active">
+        <a href="javascript:void(0)" data-url="pages/assignment" data-icon="fa-user" data-title="管理员管理" kit-target  addtabs="9" url="pages/assignment/" py="glygl" pinyin="guanliyuanguanli">
+          <i class="fa fa-user"></i>
+          <span>管理员管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="">
+    <a href="/admin/category?ref=addtabs" addtabs="3" url="/admin/category" py="flgl" pinyin="fenleiguanli">
+      <i class="fa fa-list
+    "></i>
+      <span>分类管理</span>
+      <span class="pull-right-container"></span>
+    </a>
+  </li>
+  <li class="treeview">
+    <a href="javascript:;" addtabs="243" url="javascript:;" py="wxgl" pinyin="weixinguanli">
+      <i class="fa fa-wechat"></i>
+      <span>微信管理</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+      <li class="">
+        <a href="/admin/wechat/autoreply?ref=addtabs" addtabs="244" url="/admin/wechat/autoreply" py="zdhfgl" pinyin="zidonghuifuguanli">
+          <i class="fa fa-reply-all"></i>
+          <span>自动回复管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/wechat/config?ref=addtabs" addtabs="250" url="/admin/wechat/config" py="pzgl" pinyin="peizhiguanli">
+          <i class="fa fa-cog"></i>
+          <span>配置管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/wechat/menu?ref=addtabs" addtabs="256" url="/admin/wechat/menu" py="cdgl" pinyin="caidanguanli">
+          <i class="fa fa-list"></i>
+          <span>菜单管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/wechat/response?ref=addtabs" addtabs="263" url="/admin/wechat/response" py="zygl" pinyin="ziyuanguanli">
+          <i class="fa fa-list-alt"></i>
+          <span>资源管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="">
+    <a href="/admin/version?ref=addtabs" addtabs="279" url="/admin/version" py="bbgl" pinyin="banbenguanli">
+      <i class="fa fa-file-text-o"></i>
+      <span>版本管理</span>
+      <span class="pull-right-container"></span>
+    </a>
+  </li>
+  <li class="treeview">
+    <a href="javascript:;" addtabs="768" url="javascript:;" py="slgl" pinyin="shiliguanli">
+      <i class="fa fa-magic"></i>
+      <span>示例管理</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+      <li class="">
+        <a href="/admin/example/bootstraptable?ref=addtabs" addtabs="769" url="/admin/example/bootstraptable" py="bgwzsl" pinyin="biaogewanzhengshili">
+          <i class="fa fa-table"></i>
+          <span>表格完整示例</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/example/colorbadge?ref=addtabs" addtabs="775" url="/admin/example/colorbadge" py="csjb" pinyin="caisejiaobiao">
+          <i class="fa fa-table"></i>
+          <span>彩色角标</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/example/controllerjump?ref=addtabs" addtabs="779" url="/admin/example/controllerjump" py="kzqjtz" pinyin="kongzhiqijiantiaozhuan">
+          <i class="fa fa-table"></i>
+          <span>控制器间跳转</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/example/cxselect?ref=addtabs" addtabs="783" url="/admin/example/cxselect" py="djld" pinyin="duojiliandong">
+          <i class="fa fa-table"></i>
+          <span>多级联动</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/example/multitable?ref=addtabs" addtabs="787" url="/admin/example/multitable" py="dbgsl" pinyin="duobiaogeshili">
+          <i class="fa fa-table"></i>
+          <span>多表格示例</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/example/relationmodel?ref=addtabs" addtabs="791" url="/admin/example/relationmodel" py="glmxsl" pinyin="guanlianmoxingshili">
+          <i class="fa fa-table"></i>
+          <span>关联模型示例</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/example/tabletemplate?ref=addtabs" addtabs="795" url="/admin/example/tabletemplate" py="bgmbsl" pinyin="biaogemubanshili">
+          <i class="fa fa-table"></i>
+          <span>表格模板示例</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/example/baidumap?ref=addtabs" addtabs="800" url="/admin/example/baidumap" py="bddtsl" pinyin="baiduditushili">
+          <i class="fa fa-map-pin"></i>
+          <span>百度地图示例</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="treeview">
+    <a href="javascript:;" addtabs="804" url="javascript:;" py="bkgl" pinyin="bokeguanli">
+      <i class="fa fa-list"></i>
+      <span>博客管理</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+      <li class="">
+        <a href="/admin/blog/post?ref=addtabs" addtabs="805" url="/admin/blog/post" py="rzgl" pinyin="rizhiguanli">
+          <i class="fa fa-list"></i>
+          <span>日志管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/blog/category?ref=addtabs" addtabs="811" url="/admin/blog/category" py="flgl" pinyin="fenleiguanli">
+          <i class="fa fa-list"></i>
+          <span>分类管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/blog/comment?ref=addtabs" addtabs="817" url="/admin/blog/comment" py="plgl" pinyin="pinglunguanli">
+          <i class="fa fa-comment"></i>
+          <span>评论管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="">
+    <a href="/admin/fileix?ref=addtabs" addtabs="592" url="/admin/fileix" py="wjgl" pinyin="wenjianguanli">
+      <i class="fa fa-folder-o"></i>
+      <span>文件管理</span>
+      <span class="pull-right-container"></span>
+    </a>
+  </li>
+  <li class="treeview">
+    <a href="javascript:;" addtabs="691" url="javascript:;" py="hygl" pinyin="huiyuanguanli">
+      <i class="fa fa-list"></i>
+      <span>会员管理</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+      <li class="">
+        <a href="/admin/user/user?ref=addtabs" addtabs="692" url="/admin/user/user" py="hygl" pinyin="huiyuanguanli">
+          <i class="fa fa-user"></i>
+          <span>会员管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/user/group?ref=addtabs" addtabs="701" url="/admin/user/group" py="hyzgl" pinyin="huiyuanzuguanli">
+          <i class="fa fa-users"></i>
+          <span>会员组管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/user/rule?ref=addtabs" addtabs="710" url="/admin/user/rule" py="hygzgl" pinyin="huiyuanguizeguanli">
+          <i class="fa fa-circle-o"></i>
+          <span>会员规则管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="treeview">
+    <a href="javascript:;" addtabs="719" url="javascript:;" py="Cgl" pinyin="CMSguanli">
+      <i class="fa fa-list"></i>
+      <span>CMS管理</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+      <li class="">
+        <a href="/admin/cms/archives?ref=addtabs" addtabs="720" url="/admin/cms/archives" py="nrgl" pinyin="neirongguanli">
+          <i class="fa fa-file-text-o"></i>
+          <span>内容管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/cms/channel?ref=addtabs" addtabs="726" url="/admin/cms/channel" py="lmgl" pinyin="lanmuguanli">
+          <i class="fa fa-list"></i>
+          <span>栏目管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/cms/modelx?ref=addtabs" addtabs="732" url="/admin/cms/modelx" py="mxgl" pinyin="moxingguanli">
+          <i class="fa fa-th"></i>
+          <span>模型管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/cms/tags?ref=addtabs" addtabs="744" url="/admin/cms/tags" py="bqgl" pinyin="biaoqianguanli">
+          <i class="fa fa-tags"></i>
+          <span>标签管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/cms/block?ref=addtabs" addtabs="750" url="/admin/cms/block" py="qkgl" pinyin="qukuaiguanli">
+          <i class="fa fa-th-large"></i>
+          <span>区块管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/cms/page?ref=addtabs" addtabs="756" url="/admin/cms/page" py="dygl" pinyin="danyeguanli">
+          <i class="fa fa-file"></i>
+          <span>单页管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/admin/cms/comment?ref=addtabs" addtabs="762" url="/admin/cms/comment" py="plgl" pinyin="pinglunguanli">
+          <i class="fa fa-comment"></i>
+          <span>评论管理</span>
+          <span class="pull-right-container"></span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="header">相关链接</li>
+  <li>
+    <a href="" target="_blank">
+      <i class="fa fa-comment text-yellow"></i>
+      <span>交流社区</span>
+    </a>
+  </li>
+  <li>
+    <a href="" target="_blank">
+      <i class="fa fa-qq text-aqua"></i>
+      <span>QQ交流群</span>
+    </a>
+  </li>
+
+
+
+          <li></li>
           <li>
                                 <a href="javascript:;" kit-target data-options="{url:'test.html',icon:'&#xe6c6;',title:'表格',id:'1'}">
                                     <i class="layui-icon">&#xe6c6;</i><span> 表格</span></a>
@@ -791,16 +1180,7 @@
             app.set({
                 type: 'iframe'
             }).init();
-            $('#pay').on('click', function() {
-                layer.open({
-                    title: false,
-                    type: 1,
-                    content: '<img src="/build/images/pay.png" />',
-                    area: ['500px', '250px'],
-                    shadeClose: true
-                });
-            });
-
+            
         });
     </script>
 

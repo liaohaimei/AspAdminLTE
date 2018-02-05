@@ -17,3 +17,42 @@
 .layui-tab-title li{ color: #FFF; padding: 0 10px; line-height: 50px;}
 .layui-tab-title li .layui-tab-close{ color: #FFF;}
 .layui-tab-title .layui-this:after{ display: none;}
+
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt25{margin-top: 25px;}
+.mt30{margin-top: 30px;}
+.mt35{margin-top: 35px;}
+.mt40{margin-top: 40px;}
+.mt45{margin-top: 45px;}
+.mt50{margin-top: 50px;}
+
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb25{margin-bottom: 25px;}
+.mb30{margin-bottom: 30px;}
+.mb35{margin-bottom: 35px;}
+.mb40{margin-bottom: 40px;}
+.mb45{margin-bottom: 45px;}
+.mb50{margin-bottom: 50px;}
+
+.pagination{ margin: 0; }
+
+/*总容器样式*/ 
+.pager { padding: 3px; text-align: center; color:#66C;font-size:12px; font-family:Tahoma;}   
+/*分页链接样式*/ 
+.pager a { margin: 2px; padding:5px 10px; color: #66C; text-decoration: none; border: 1px solid #aad; border-radius: 4px; }   
+/*分页链接鼠标移过的样式*/ 
+.pager a:hover { color: #FFF; border: 1px solid #FF5722; background-color:#FF5722; }   
+/*当前页码的样式*/ 
+.pager span.current { font-weight: bold; margin: 0 2px; border-radius: 4px; padding:5px 10px;; color: #fff; background-color: #FF5722; border: 1px solid #FF5722; }   
+/*不可用分页链接的样式(比如第1页时的“上一页”链接)*/ 
+.pager span.disabled { margin: 0 2px; padding: 5px 10px; color: #CCC; border: 1px solid #DDD; border-radius: 4px; }   
+/*跳转下拉菜单的样式*/ 
+.pager select {margin: 0px 2px -2px 2px; padding: 5px 10px; color:#66C;font-size:12px; font-family:Tahoma; border-radius: 4px;}   
+/*跳转文本框的样式*/ 
+.pager input {margin: 0px 2px -2px 2px; padding: 5px 10px; border-radius: 4px; color:#66C; border: 1px solid #DDD; padding:2px; text-align:center;font-size:12px; font-family:Tahoma;}  
