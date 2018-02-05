@@ -301,7 +301,7 @@ While Not rs.Eof
                                       </td>
                                       <td style="text-align: center; vertical-align: middle; "><%=rs("updated_at")%></td>
                                       <td style="text-align: center; vertical-align: middle; ">
-                                        <a href="/admin/auth/admin/edit/ids/3" class="btn btn-xs btn-success btn-editone" title="" data-table-id="table" data-field-index="8" data-row-index="0" data-button-index="1">
+                                        <a  onclick="fun.popUpdate('+id+')" class="btn btn-xs btn-success btn-editone" title="" data-table-id="table" data-field-index="8" data-row-index="0" data-button-index="1">
                                           <i class="fa fa-pencil"></i>
                                         </a>
                                         <a href="javascript:;" class="btn btn-xs btn-danger btn-delone" title="" data-table-id="table" data-field-index="8" data-row-index="0" data-button-index="2">
@@ -425,28 +425,100 @@ Easp.Db.Close(rs)
     <script src="../../bower_components/layui/layui.js"></script>
 
     <script>
-
-    layui.use('table', function(){
-      var table = layui.table;
-      table.render({
-        cols: [[
-          {field:'id', title:'ID', width:100}
-          ,{fixed: 'right', width:150, align:'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
-        ]]
-      });
-    });
-    $(function(){
-
-
-      $.get('data/json_data.asp',  //分页页面地址
-          {page:5},   //要获取的页码
-          function(data){  //回调
-            console.log(data);
-            //alert(data.rows[2].产品名称); //第3行记录的产品名称
-          }, 
-          'json'  //指定ajax返回后的是json格式数据
-    );
+      layui.use('layer', function(){
+        var layer = layui.layer;
+      }); 
+      var fun = {
+      popView:function(id){//添加
+      var index = layui.layer.open({
+      title : "分配",
+      type : 2,
+      content : "view.asp?id="+id+"",
+      success : function(layero, index){
+        setTimeout(function(){
+          layui.layer.tips('点击此处返回列表', '.layui-layer-setwin .layui-layer-close', {
+            tips: 3
+          });
+        },500)
+      }
     })
+    //改变窗口大小时，重置弹窗的高度，防止超出可视区域（如F12调出debug的操作）
+    $(window).resize(function(){
+      layui.layer.full(index);
+    })
+    layui.layer.full(index);
+        },
+      popCreate:function(){//添加
+      var index = layui.layer.open({
+      title : "创建角色",
+      type : 2,
+      area: ['100%', '100%'],
+      content : "create.asp",
+      success : function(layero, index){
+        setTimeout(function(){
+          layui.layer.tips('点击此处返回列表', '.layui-layer-setwin .layui-layer-close', {
+            tips: 3
+          });
+        },500)
+      }
+    })
+    //改变窗口大小时，重置弹窗的高度，防止超出可视区域（如F12调出debug的操作）
+    $(window).resize(function(){
+      layui.layer.full(index);
+    })
+    layui.layer.full(index);
+        },
+        popUpdate:function(id){//添加
+      var index = layui.layer.open({
+      title : "更新角色",
+      type : 2,
+      area: ['100%', '100%'],
+      content : "update.asp?id="+id+"",
+      success : function(layero, index){
+        setTimeout(function(){
+          layui.layer.tips('点击此处返回列表', '.layui-layer-setwin .layui-layer-close', {
+            tips: 3
+          });
+        },500)
+      }
+    })
+    //改变窗口大小时，重置弹窗的高度，防止超出可视区域（如F12调出debug的操作）
+    $(window).resize(function(){
+      layui.layer.full(index);
+    })
+    layui.layer.full(index);
+        },
+        updateStatus:function(el,id){//删除当前一条数据
+          var _this = $(el);
+          console.log(_this.val());
+          
+        },
+        _alertMes:function(){//添加成功
+          layer.msg('添加成功', {
+              btn: ['继续添加', '退出添加'],
+              yes: function(index, layero){
+                history.go(-1);
+              },
+              btn2: function(index, layero){
+                window.parent.location.reload();
+                parent.layer.closeAll();
+              }
+          },function(){window.parent.location.reload();parent.layer.closeAll();});
+        },
+        _alertSuccess:function(){//修改成功
+      layer.msg('修改成功',{
+        icon: 1,
+        time: 2000 //2秒关闭（如果不配置，默认是3秒）
+      },function(){window.parent.location.reload();parent.layer.closeAll();});
+        },
+        _alertFail:function(){//修改成功
+      layer.msg('操作失败',{
+        icon: 2,
+        time: 2000 //2秒关闭（如果不配置，默认是3秒）
+      },function(){window.parent.location.reload();parent.layer.closeAll();});
+        }
+
+}
     </script>
 
 </body>
