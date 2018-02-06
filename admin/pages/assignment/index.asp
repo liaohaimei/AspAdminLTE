@@ -296,7 +296,9 @@ While Not rs.Eof
                                       <td style="text-align: center; vertical-align: middle; ">
                                         <span class="text-success">
                                           <i class="fa fa-circle"></i>
-                                          <%=rs("status")%>
+                                          <%Dim Result
+                                          Result = Easp.IIF(rs("status")=1, "<span class='s-sta s-disabled'>禁用</span>", "<span class='s-sta s-enabled'>开启</span>")%>
+                                          <%=Result%>
                                         </span>
                                       </td>
                                       <td style="text-align: center; vertical-align: middle; "><%=rs("updated_at")%></td>
