@@ -1,16 +1,21 @@
-<!--#include file="../../../admin_inc.asp"-->
+<!--#include file="../../../../common/easp.asp" -->
 <%
-str = getForm("str", "get")
-updateid = getForm("updateid", "get")
-echo checkAdminemail(str)
-function checkAdminemail(str)
+dim str,updateid
+str=Easp.Get("str")
+updateid=Easp.Get("updateid")
+Easp.Echo checkAdminemail(str,updateid)
+function checkAdminemail(str,updateid)
+	dim where,rs,sql
+	Easp.Var("str") = str
+	Easp.Var("updateid") = updateid
 	where = " where 1=1"
-	where = where&" and email='"&str&"'"
-	if varNull(updateid)=true then
-		where = where&" and id<>"&updateid&""
+	where = where&" and email={str}"
+	if Easp.isN(updateid)=true then
+		where = where&" and id<>{updateid}"
 	end if
-	Sql="select count(*) from {pre}admin "&where&""
- 	checkAdminemail = dbconn.db(Sql,"execute")(0)
+	sql = "Select id  From cms_admin "&where&""
+	Set rs = Easp.Db.Sel(sql)
+	Easp.W Easp.Json.ToString(rs)
 end function
 
 %>

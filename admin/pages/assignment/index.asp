@@ -137,7 +137,7 @@
                                   <a href="javascript:;" class="btn btn-primary btn-refresh"  title="刷新">
                                     <i class="fa fa-refresh"></i>
                                   </a>
-                                  <a href="javascript:;" class="btn btn-success btn-add" title="添加">
+                                  <a href="javascript:;" class="btn btn-success btn-add" title="添加" onclick="fun.popCreate()">
                                     <i class="fa fa-plus"></i>
                                     添加
                                   </a>
@@ -303,7 +303,7 @@ While Not rs.Eof
                                       </td>
                                       <td style="text-align: center; vertical-align: middle; "><%=rs("updated_at")%></td>
                                       <td style="text-align: center; vertical-align: middle; ">
-                                        <a  onclick="fun.popUpdate('+id+')" class="btn btn-xs btn-success btn-editone" title="" data-table-id="table" data-field-index="8" data-row-index="0" data-button-index="1">
+                                        <a  onclick="fun.popUpdate(<%=rs("id")%>)" class="btn btn-xs btn-success btn-editone" title="" data-table-id="table" data-field-index="8" data-row-index="0" data-button-index="1">
                                           <i class="fa fa-pencil"></i>
                                         </a>
                                         <a href="javascript:;" class="btn btn-xs btn-danger btn-delone" title="" data-table-id="table" data-field-index="8" data-row-index="0" data-button-index="2">

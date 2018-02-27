@@ -42,6 +42,8 @@
 
 .pagination{ margin: 0; }
 
+.layui-form-switch{ width: 52px; height: 24px; line-height: 24px; }
+
 /*总容器样式*/ 
 .pager { padding: 3px; text-align: center; color:#66C;font-size:12px; font-family:Tahoma;}   
 /*分页链接样式*/ 
