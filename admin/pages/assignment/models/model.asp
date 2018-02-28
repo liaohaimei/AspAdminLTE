@@ -1,7 +1,7 @@
 <!--#include file="../../../../common/easp.asp" -->
-<script src="../../../../assets/scripts/jquery.min.js" type="text/javascript"></script>
-<script src="../../../../assets/layer/layer.js"></script>
-<script type="text/javascript" src="../../../layui/layui.js"></script>
+<!-- jQuery 3 -->
+<script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../../bower_components/layui/layui.js"></script>
 <script type="text/javascript" src="../js/controller.js"></script>
 <%
 
@@ -14,15 +14,14 @@ Easp.Var("action") =Easp.Get("action")
 Easp.Var("created_at") =now()
 Easp.Var("updated_at") =now()
 Easp.Var("editpwd") =Easp.Post("editpwd")
-Easp.Echo  Easp.Var("action")
 '添加
 if Easp.Var("action")="0" then
-	dim result,sql,vali
-	vali=Easp.VarVal("username").Required.Test("username")
-	if vali=true and checkAdminuser(Easp.Var("username"))<=0 and checkAdminemail(Easp.Var("email"))<=0 then
+	dim result,sql,vali,mail
+	vali=Easp.VarVal("username").Required.Test("username") '验证用户名 用户名，必须是英文、数字或下划线，且长度为3-20位
+	mail=Easp.VarVal("email").Required.Test("email") '验证邮箱地址
+	if vali=Easp.VarVal("username") and mail=Easp.VarVal("email") and checkAdminuser(Easp.Var("username"))<=0 and checkAdminemail(Easp.Var("email"))<=0 then
 	sql="insert into cms_admin ([username],[email],[password],[status],[created_at],[updated_at]) values ({username},{email},{password},{status},{created_at},{updated_at})"
 	result =  Easp.Db.Query(sql)
-	Easp.WN result
 	if result=true then
 	Easp.Echo "<script>$(function(){fun._alertMes()})</script>"
 	else
