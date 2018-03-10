@@ -391,8 +391,13 @@ Easp.Db.Close(rs)
     <script>
        var  fun={
             popCreate:function(){
-              require(['op','jquery'],function (f,$) {
-                f.popCreate();
+              require(['op','jquery'],function (op,$) {
+                op.popCreate();
+              })
+            },
+            popUpdate:function(id){
+              require(['op','jquery'],function (op,$) {
+                op.popUpdate(id);
               })
             }
           }
