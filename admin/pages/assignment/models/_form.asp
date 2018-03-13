@@ -5,7 +5,7 @@
       <div class="form-group">
         <label for="input-username" class="col-sm-2 control-label">用户名</label>
         <div class="col-sm-10">
-          <input type="text" autocomplete="off"  class="form-control" id="input-username" name="username" value="<%=Easp.Var("sername")%>" placeholder="用户名" lay-verify="username" onblur="fun.checkAdminuser(this);">
+          <input type="text" autocomplete="off"  class="form-control" id="input-username" name="username" value="<%=Easp.Var("username")%>" placeholder="用户名" lay-verify="username" onblur="fun.checkAdminuser(this);">
         </div>
       </div>
       <div class="form-group">
